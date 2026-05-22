@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tuition Enrollment Form</title>
+    
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      font-size: 1rem; 
+    }
+
+    .form-container {
+      width: 80%;              
+    
+      margin: 3rem auto;       
+      padding: 2rem;           
+      background: #fff;
+      border-radius: 0.5rem;   
+      box-shadow: 1px 1px 1px #004080;
+       display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+
+    
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .form-container label {
+      display: block;
+      margin: 0.5rem 0;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="tel"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 0.1rem solid #ccc;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+    }
+
+    .form-container input[type="checkbox"] {
+      margin-right: 0.5rem;
+    }
+
+    
+    .submit-btn {
+      background-color: #004080;
+      color: white;
+      padding: 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #ccc;
+      border: solid 1px #004080;
+    }
+  </style>
+
+   <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+       <header>
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="my-images/WhatsApp Image 2026-04-08 at 03.32.18 (1).jpeg" alt="Top Score Tuition" >
+            </a>
+        </div>
+
+        <div class="nav-link">
+            <nav>
+                
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="about_us.html">About Us</a></li>
+                    <li class="hideOnMobile" ><a href="service.html">Service</a></li>
+                    <li class="hideOnMobile"><a href="testimonial.html">Testimonials</a></li>
+                    <li class="hideOnMobile" ><a href="contact.html">Contact</a></li>
+                    <li class="hideOnMobile" ><a href="feedback.html">Feedback</a></li>
+                </ul>
+            
+            </nav>
+        </div>
+        <div class="nav_button" >
+             <ul class="sidebar">
+                    <li onclick=hidesidebar()><a href=""><img src="my-images/close_39dp_004080_FILL0_wght400_GRAD0_opsz40.png" alt=""></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="testimonial.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feeback</a></li>
+                     <li><a href="Enrol.html">Enrol</a></li>
+                    
+
+                    
+                    
+                </ul>
+               
+           
+           <a href="Enrol.html">    <button class="hideOnMobile" > Enroll</button> </a>
+             <a class="menu-button" onclick=showsidebar()><img src="my-images/menu_39dp_004080_FILL0_wght400_GRAD0_opsz40.png" alt="" style="color: #004080;"></a>
+        </div>
+
+        <script>
+            function showsidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            }
+
+             function hidesidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            }
+        </script>
+    </header>
+
+
+
+
+  <div class="form-container">
+    <div>
+        <h2>Top Score Tuition<h2>
+        <form action="cse25-267@thuto.bac.ac.bw" method="post">
+    
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+    </div>
+
+
+    <div>
+          <h3>Select Subjects</h3>
+          <label><input type="checkbox" name="subjects[]" value="math"> Mathematics</label>
+          <label><input type="checkbox" name="subjects[]" value="english"> English</label>
+          <label><input type="checkbox" name="subjects[]" value="science"> Science</label>
+          <label><input type="checkbox" name="subjects[]" value="social"> Social Studies</label>
+          <label><input type="checkbox" name="subjects[]" value="setswana"> Setswana</label>
+          <label><input type="checkbox" name="subjects[]" value="agriculture"> Agriculture</label>
+          <label><input type="checkbox" name="subjects[]" value="computer"> Computer Studies</label>
+          <label><input type="checkbox" name="subjects[]" value="moral"> Moral Education</label>
+
+          <button type="submit" class="submit-btn">Submit Enrollment</button>
+        
+        </form>
+
+
+    </div>
+  </div>
+
+   <footer class="footer">
+        <address>
+        <p><storng>Where to find us</strong><br>
+             Plot No. 34634 Mogoditshane</p>
+        <p>
+            <bold>Contact</bold> <br>
+           Phone:<a href="tel:+26776660057">+267 76660057</a> <br>
+           Email:<a href="mailto:cse25-267@thuto.bac.ac.bw">cse25-267@thuto.bac.ac.bw</a>
+        </p>
+        
+        <p><strong>Office Hours:</strong><br>
+          Monday – Thursday: 06:45 – 15:00<br>
+          Friday: 06:45 – 14:00<br>
+          Saturday – Sunday: Closed
+        </p>
+        </Address>
+        <section class="footer-links">
+            <div class="img-container"><img src="my-images/logo-004080.jpeg" alt="Top Score Tuition" style="height: 100%; width: 50%;"></div>
+            <p>&copy;2026 All Rights Rerserved|Top Score Tuition</p>
+            <nav>
+                <ul class="social-media-icon-container">
+                    <li class="social-media-icons"><a href="https://www.facebook.com/TopScoreTC"><img src="my-images/facebook-brands-solid.png" alt="FaceBook"></a></li>
+                    <li class="social-media-icons" ><a href=""><img src="my-images/tiktok-brands-solid.png" alt="Tiktok icon"></a></li>
+                    <li class="social-media-icons" ><a href="https://www.instagram.com/topscoretuition1?igsh=OHhuZ29nbzAzejZq"><img src="my-images/square-instagram-brands-solid.png" alt="instagram icon"></a></li>
+                </ul>
+            </nav>
+        </section>
+    
+    </footer>
+
+
+
+</body>
+</html>
+

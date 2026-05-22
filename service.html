@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="my-images/WhatsApp Image 2026-04-08 at 03.32.18 (1).jpeg" alt="Top Score Tuition" >
+            </a>
+        </div>
+
+        <div class="nav-link">
+            <nav>
+                
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="about_us.html">About Us</a></li>
+                    <li class="hideOnMobile" ><a href="#">Service</a></li>
+                    <li class="hideOnMobile"><a href="testimonial.html">Testimonials</a></li>
+                    <li class="hideOnMobile" ><a href="contact.html">Contact</a></li>
+                    <li class="hideOnMobile" ><a href="feedback.html">Feedback</a></li>
+
+                </ul>
+            
+            </nav>
+        </div>
+        <div class="nav_button" >
+             <ul class="sidebar">
+                    <li onclick=hidesidebar()><a href=""><img src="my-images/close_39dp_004080_FILL0_wght400_GRAD0_opsz40.png" alt=""></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="testimonial.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feeback</a></li>
+                     <li><a href="Enrol.html">Enrol</a></li>
+                    
+                    
+
+                    
+                    
+                </ul>
+               
+           
+           <a href="Enrol.html">    <button class="hideOnMobile" > Enroll</button> </a>
+             <a class="menu-button" onclick=showsidebar()><img src="my-images/menu_39dp_004080_FILL0_wght400_GRAD0_opsz40.png" alt="" style="color: #004080;"></a>
+        </div>
+
+        <script>
+            function showsidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            }
+
+             function hidesidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            }
+        </script>
+    </header>
+
+    <main>
+        <div class="banner">
+            <h1>Our Offerings</h1>
+            <p>Find out about our offerings and how we can help you succeed in your studies.</p>
+        </div>
+
+
+        <div class="academic-tracks">
+            <h5>Comprehensive Coverage</h5>
+            <h1>Academic Tracks We Support</h1>
+            <div class="s-cards">
+             <div class="card"  >
+                <img src="my-images/primary.png" class="card-img-top" alt="image-for-primary-students">
+                <div class="card-body">
+                    <h5 class="card-title">PSLE(1-7)</h5>
+                    
+                </div>
+              
+                <div class="card-body">
+                    <a href="primary.html" class="card-link"  >Read More</a>
+                    
+                </div>
+             </div>
+             <div class="card" >
+                <img src="my-images/junior.png" class="card-img-top" alt="image-for-JCE-students">
+                <div class="card-body">
+                    <h5 class="card-title">JCE(Form 1-3)</h5>
+                    
+                </div>
+              
+                <div class="card-body">
+                    <a href="junior.html" class="card-link">Read more</a>
+                    
+                </div>
+
+               
+            </div>
+
+             <div class="card" >
+                <img src="my-images/bgcse.png" class="card-img-top" alt="image-for-BGCSE_students" >
+                <div class="card-body">
+                    <h5 class="card-title">BGCSE(Form 4-5)</h5>
+                    
+                </div>
+              
+                <div class="card-body">
+                    <a href="bgcse.html" class="card-link">Read more</a>
+                    
+                </div>
+             </div>
+
+             <div class="card" >
+                <img src="my-images/igcse-1.png" class="card-img-top" alt="image-for-IGCSE"  >
+                <div class="card-body">
+                    <h5 class="card-title">IGCSE(Form 1-5)</h5>
+                    
+                </div>
+              
+                <div class="card-body">
+                    <a href="igsce.html" class="card-link">Read More</a>
+                    
+                </div>
+            </div>
+
+             
+
+           
+        </div>
+        <div class="our-educational-approach">
+            <h1>Our Educational Approach</h1>
+            <h5>Nurturing a love for learning in every student</h5>
+            <div class="all-e-o-cards">
+                <div class="o-e-card1">
+
+                    <div class="o-e-card big-size-card">
+                        <h1>Coaching & Mentoring</h1>
+                        <p>Beyond the syllabus. We offer academic lifestyle coaching, time management, and university application guidance to prepare students for life after graduation. </p> 
+                    </div>
+
+                    <div class="o-e-card same-size-card" id="blue-card" style="color: #ffffff;">
+                        <h1>Exam Prep</h1>
+                        <p>Intensive strategy modules for PSLE, IGCSE, BGCSE, SAT, and International A-Levels</p>
+                    </div>
+                
+                </div>
+
+
+
+                <div class="o-e-card2 ">
+                
+                    <div class="o-e-card same-size-card">
+                        <h1>Group Tuition </h1>
+                        <p>Small-cohort learning that fosters collaborative critical thinking and peer-to-peer scholarly exchange.</p>
+                    </div>
+
+                    <div class="o-e-card same-size-card">
+                        <h1>Subject-Specific </h1>
+                        <p>Deep-dive sessions in Math, Science, and Languages (Setswana, English, French)</p>
+                    </div>
+
+                    <div class="o-e-card same-size-card" id="brown-card">
+                        <h1>Individualized Learning</h1>
+                        <p>We recognize that each learner is unique, and we tailor our teaching methods to accommodate different learning styles and abilities.</p> 
+                    </div> 
+                </div>
+                
+            </div>
+        </div>
+       </div>
+    </main>
+
+    
+    <footer class="footer">
+       <address>
+        <p><storng>Where to find us</strong><br>
+             Plot No. 34634 Mogoditshane</p>
+        <p>
+            <bold>Contact</bold> <br>
+           Phone:<a href="tel:+26776660057">+267 76660057</a> <br>
+           Email:<a href="mailto:cse25-267@thuto.bac.ac.bw">cse25-267@thuto.bac.ac.bw</a>
+        </p>
+        
+        <p><strong>Office Hours:</strong><br>
+          Monday – Thursday: 06:45 – 15:00<br>
+          Friday: 06:45 – 14:00<br>
+          Saturday – Sunday: Closed
+        </p>
+        </Address>
+        <section class="footer-links">
+            <div class="img-container"><img src="my-images/logo-004080.jpeg" alt="Top Score Tuition" style="height: 100%; width: 50%;"></div>
+            <p>&copy;2026 All Rights Rerserved|Top Score Tuition</p>
+            <nav>
+                <ul class="social-media-icon-container">
+                    <li class="social-media-icons"><a href="https://www.facebook.com/TopScoreTC"><img src="my-images/facebook-brands-solid.png" alt="FaceBook"></a></li>
+                    <li class="social-media-icons" ><a href=""><img src="my-images/tiktok-brands-solid.png" alt="Tiktok icon"></a></li>
+                    <li class="social-media-icons" ><a href="https://www.instagram.com/topscoretuition1?igsh=OHhuZ29nbzAzejZq"><img src="my-images/square-instagram-brands-solid.png" alt="instagram icon"></a></li>
+                </ul>
+            </nav>
+        </section>
+    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
